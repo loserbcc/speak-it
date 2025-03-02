@@ -33,43 +33,23 @@ Follow the instructions in that repository to set up the API server before insta
 
 ## Installation
 
-### Quick Start for Friends (Ubuntu)
-If you're sharing this application with friends who are not familiar with GitHub, here's what they need to do:
-
+### Option 1: System-wide Installation (Ubuntu)
 1. Set up the Kokoro TTS API using the Docker version:
    - Follow instructions at [https://github.com/remsky/Kokoro-FastAPI](https://github.com/remsky/Kokoro-FastAPI)
    - Make sure the API is running on http://localhost:8880/v1
 
-2. Download the project as a ZIP file from GitHub
-   - Visit https://github.com/loserbcc/speak-it
-   - Click the green "Code" button
-   - Select "Download ZIP"
-   - Extract the ZIP file to a location of their choice
-
-3. Open a terminal in the extracted directory and run:
-```bash
-sudo ./install.sh
-```
-
-4. Once installation is complete, they can start the application by:
-   - Running `speak-it` in a terminal, or
-   - Finding "SPEAK-IT!" in their applications menu
-
-5. The application will also start automatically on next login
-
-### Option 1: System-wide Installation (Ubuntu)
-1. Clone the repository
+2. Clone the repository
 ```bash
 git clone https://github.com/loserbcc/speak-it.git
 cd speak-it
 ```
 
-2. Run the installer script
+3. Run the installer script
 ```bash
 sudo ./install.sh
 ```
 
-3. The application will:
+4. The application will:
    - Install all required system dependencies
    - Create a dedicated Python virtual environment with access to system packages
    - Set up the application in `/opt/speak-it/`
@@ -77,21 +57,29 @@ sudo ./install.sh
    - Add a desktop entry to your applications menu
    - Configure auto-start on login
 
+5. Start the application:
+   - Run `speak-it` in a terminal, or
+   - Find "SPEAK-IT!" in your applications menu
+
 ### Option 2: Manual Installation (Development)
-1. Clone the repository
+1. Set up the Kokoro TTS API using the Docker version:
+   - Follow instructions at [https://github.com/remsky/Kokoro-FastAPI](https://github.com/remsky/Kokoro-FastAPI)
+   - Make sure the API is running on http://localhost:8880/v1
+
+2. Clone the repository
 ```bash
 git clone https://github.com/loserbcc/speak-it.git
 cd speak-it
 ```
 
-2. Create and activate a virtual environment with system site packages:
+3. Create and activate a virtual environment with system site packages:
 ```bash
 python3 -m venv venv --system-site-packages
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Run the application:
+4. Run the application:
 ```bash
 python main.py
 ```
