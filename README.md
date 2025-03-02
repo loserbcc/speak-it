@@ -27,6 +27,26 @@ sudo apt-get install -y python3-pip python3-gi python3-gi-cairo gir1.2-gtk-3.0 m
 
 ## Installation
 
+### Quick Start for Friends (Ubuntu)
+If you're sharing this application with friends who are not familiar with GitHub, here's what they need to do:
+
+1. Download the project as a ZIP file from GitHub
+   - Visit https://github.com/loserbcc/speak-it
+   - Click the green "Code" button
+   - Select "Download ZIP"
+   - Extract the ZIP file to a location of their choice
+
+2. Open a terminal in the extracted directory and run:
+```bash
+sudo ./install.sh
+```
+
+3. Once installation is complete, they can start the application by:
+   - Running `speak-it` in a terminal, or
+   - Finding "SPEAK-IT!" in their applications menu
+
+4. The application will also start automatically on next login
+
 ### Option 1: System-wide Installation (Ubuntu)
 1. Clone the repository
 ```bash
