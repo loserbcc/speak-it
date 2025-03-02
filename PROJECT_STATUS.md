@@ -7,7 +7,7 @@ Last Updated: March 2, 2025
 
 1. **Core Functionality**
    - System tray application using GTK3
-   - Text-to-speech conversion using Kokoro TTS API
+   - Text-to-speech conversion using [Kokoro TTS API](https://github.com/remsky/Kokoro-FastAPI)
    - Voice selection (alloy, echo, fable, etc.)
    - Auto-play mode for automatic speech of selected text
    - Silent audio playback (no media player windows)
@@ -30,6 +30,7 @@ Last Updated: March 2, 2025
    - Installation instructions
    - Usage guide
    - API configuration details
+   - Reference to [Kokoro-FastAPI](https://github.com/remsky/Kokoro-FastAPI) Docker implementation
 
 ## Future Enhancements
 

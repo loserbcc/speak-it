@@ -25,27 +25,37 @@ sudo apt-get install -y python3-pip python3-gi python3-gi-cairo gir1.2-gtk-3.0 m
 - OpenAI client library
 - mpg123 for audio playback
 
+### Kokoro TTS API
+This application requires a running instance of the Kokoro TTS API. We recommend using the Docker version available at:
+- [https://github.com/remsky/Kokoro-FastAPI](https://github.com/remsky/Kokoro-FastAPI)
+
+Follow the instructions in that repository to set up the API server before installing SPEAK-IT!
+
 ## Installation
 
 ### Quick Start for Friends (Ubuntu)
 If you're sharing this application with friends who are not familiar with GitHub, here's what they need to do:
 
-1. Download the project as a ZIP file from GitHub
+1. Set up the Kokoro TTS API using the Docker version:
+   - Follow instructions at [https://github.com/remsky/Kokoro-FastAPI](https://github.com/remsky/Kokoro-FastAPI)
+   - Make sure the API is running on http://localhost:8880/v1
+
+2. Download the project as a ZIP file from GitHub
    - Visit https://github.com/loserbcc/speak-it
    - Click the green "Code" button
    - Select "Download ZIP"
    - Extract the ZIP file to a location of their choice
 
-2. Open a terminal in the extracted directory and run:
+3. Open a terminal in the extracted directory and run:
 ```bash
 sudo ./install.sh
 ```
 
-3. Once installation is complete, they can start the application by:
+4. Once installation is complete, they can start the application by:
    - Running `speak-it` in a terminal, or
    - Finding "SPEAK-IT!" in their applications menu
 
-4. The application will also start automatically on next login
+5. The application will also start automatically on next login
 
 ### Option 1: System-wide Installation (Ubuntu)
 1. Clone the repository
@@ -116,6 +126,8 @@ The application uses a local Kokoro TTS API:
 - Default voice: alloy
 - Model: kokoro
 - No API key required (using "not-needed")
+
+For setting up the API, please refer to [Kokoro-FastAPI](https://github.com/remsky/Kokoro-FastAPI).
 
 ## Version History
 See [CHANGELOG.md](CHANGELOG.md) for version history and updates.
