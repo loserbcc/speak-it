@@ -1,7 +1,7 @@
 # SPEAK-IT! v0.9.0 (Pre-Beta)
 
 ## Overview
-SPEAK-IT! is a system tray application that converts selected text to speech using a local Kokoro TTS API. It features an auto-play mode, silent audio playback, and a Zork-style interactive introduction. Perfect for seamless text-to-speech integration in your workflow.
+SPEAK-IT! is a system tray application that converts selected text to speech using a local Kokoro TTS API. It features an auto-play mode, silent audio playback, and an interactive introduction. Perfect for seamless text-to-speech integration in your workflow.
 
 ## Features
 - System tray integration with GTK3
@@ -11,7 +11,7 @@ SPEAK-IT! is a system tray application that converts selected text to speech usi
 - Silent audio playback (no media player windows)
 - Clipboard monitoring for text selection
 - Clean temporary file management
-- Interactive Zork-style About dialog
+- Interactive About dialog with surprises
 
 ## Requirements
 ### System Dependencies
